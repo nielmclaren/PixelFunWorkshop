@@ -63,3 +63,12 @@ color transformPixel(PImage img, int x, int y, color c) {
   }
 }
 
+// When a key is pressed this function gets called.
+void keyReleased() {
+  switch (key) {
+    case ' ':
+      // When the space key is pressed we'll save a screenshot.
+      saveFrame();
+      break;
+  }
+}
